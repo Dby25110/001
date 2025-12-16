@@ -3,7 +3,7 @@ package com;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-
+string A="12345";
 public class ResourceLeakExample {
    public static void main1(String[] args) {
        BufferedReader reader = null;
@@ -34,7 +34,7 @@ public class ResourceLeakExample {
    }
 	
 	public void main3() {
-		String password = "1"; 
+		String password = A; 
         System.out.println(password);
     }
 
